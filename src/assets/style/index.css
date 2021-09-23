@@ -3,3 +3,91 @@
  * @date: 22/septiembre/2021
  * @description: 
 **/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins'; 
+    font-weight: 300;
+}
+
+body {
+    width: 100%; 
+    background: #674baf;
+}
+
+div#root {
+    width: 100%;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    color: gray;
+    font-size: 1.2rem;
+    width: 250px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgba(62,60,73,.5);
+    font-weight: 700;
+} 
+
+.container {
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+.card { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 200px;  
+    border-radius: 8px;
+    margin: 15px;
+    padding: 15px;
+    background-color: #e7e7e9;
+    box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 50%);
+}
+
+.image> img{
+    width: 200px;  
+    height: 115px;
+    object-fit: cover;
+}
+
+p {
+    margin-top: 10px;
+    text-align: center;
+}
+
+hr, h2 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #FFF;
+}
+
+h3 {
+    font-weight: bold;
+    padding-left: 20px;
+    color: #FFF;
+}
+
+@media screen and (min-width: 0px) and (max-width: 800px) {
+    input, form {
+        width: 100%; 
+    } 
+
+    .center {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+}
