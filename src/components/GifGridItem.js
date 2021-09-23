@@ -7,7 +7,7 @@ import React from 'react';
 
 const GifGridItem = ({ title, url}) => {
     return (
-        <div className="card"> 
+        <div className="card animate__animated animate__flipInX"> 
             <div className="image">
                 <img 
                     alt={title}

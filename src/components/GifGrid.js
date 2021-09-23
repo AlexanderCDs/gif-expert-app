@@ -3,23 +3,21 @@
  * @date: 22/septiembre/2021
  * @description: 
 **/
-import React, {useState, useEffect} from 'react'; 
-import GifGridItem from './GifGridItem';
-import {getGifs} from '../helpers/getGifs';
-
+import React from 'react'; 
+import { useFetchGifs } from '../hooks/useFetchGifs';
+import GifGridItem from './GifGridItem'
 const GifGrid = ({ category, limit = 15}) => {
-    const [gifs, setGifs] = useState([])
-     
-    useEffect( () => {
-        getGifs(category, limit)
-            .then( setGifs );
-    }, [category, limit]) 
 
+    const {data: images, loading} = useFetchGifs(category); 
+ 
     return (
         <>
             <h3>{category}</h3>
             <div className="container"> 
-                {gifs.map((item) => {
+                {loading && (
+                    <h3 className="animate__animated animate__flash">Loading...</h3>
+                )}
+                {images.map((item) => {
                     return (
                         <GifGridItem 
                             key={item.id} 
