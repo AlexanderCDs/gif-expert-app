@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/gif-expert-app/static/css/main.4bc3d6e5.chunk.css",
-    "main.js": "/gif-expert-app/static/js/main.11f86a32.chunk.js",
-    "main.js.map": "/gif-expert-app/static/js/main.11f86a32.chunk.js.map",
+    "main.js": "/gif-expert-app/static/js/main.bf135e1d.chunk.js",
+    "main.js.map": "/gif-expert-app/static/js/main.bf135e1d.chunk.js.map",
     "runtime-main.js": "/gif-expert-app/static/js/runtime-main.75724771.js",
     "runtime-main.js.map": "/gif-expert-app/static/js/runtime-main.75724771.js.map",
     "static/js/2.49446f5b.chunk.js": "/gif-expert-app/static/js/2.49446f5b.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.75724771.js",
     "static/js/2.49446f5b.chunk.js",
     "static/css/main.4bc3d6e5.chunk.css",
-    "static/js/main.11f86a32.chunk.js"
+    "static/js/main.bf135e1d.chunk.js"
   ]
 }
