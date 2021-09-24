@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <GifGridItem /> should show <GifGridItem /> success 1`] = `
+<div
+  className="card animate__animated animate__flipInX"
+>
+  <div
+    className="image"
+  >
+    <img
+      alt="Un título"
+      src="https://localhost/mi-imagen.jpg"
+      title="Un título"
+    />
+  </div>
+  <p>
+    Un título
+  </p>
+</div>
+`;

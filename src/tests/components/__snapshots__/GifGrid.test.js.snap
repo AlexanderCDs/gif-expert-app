@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <GifGrid /> should show <GifGrid /> success 1`] = `
+<Fragment>
+  <h3>
+    back to the future
+  </h3>
+  <div
+    className="container"
+  >
+    <h3
+      className="animate__animated animate__flash"
+    >
+      Loading...
+    </h3>
+  </div>
+</Fragment>
+`;
+
+exports[`Test <GifGrid /> should show items when load images useFetchGif 1`] = `
+<Fragment>
+  <h3>
+    back to the future
+  </h3>
+  <div
+    className="container"
+  >
+    <GifGridItem
+      id="12324"
+      key="12324"
+      title="back to the future"
+      url="https://localhost/image.jpg"
+    />
+  </div>
+</Fragment>
+`;
