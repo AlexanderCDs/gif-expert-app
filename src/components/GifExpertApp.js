@@ -7,8 +7,8 @@ import React, {useState} from 'react';
 import AddCategory from './AddCategory';
 import GifGrid from './GifGrid';
 
-const GifExpertApp = () => {
-    const [categories, setCategories] = useState(['One Punch', 'Rick And morty']); 
+const GifExpertApp = ({defaultData = []}) => {
+    const [categories, setCategories] = useState(defaultData); 
     return (
         <>
             <div className="center">
@@ -24,6 +24,7 @@ const GifExpertApp = () => {
                         <GifGrid 
                             key={category} 
                             category={category} 
+                            limit={20}
                         />
                     )
                 })}

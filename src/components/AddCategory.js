@@ -7,7 +7,7 @@ import React, {useState} from 'react';
 import PropTypes from 'prop-types';
 
 const AddCategory = ({ setCategories, placeholder }) => {  
-    const [inputValue, setInputValue] = useState('');
+    const [inputValue, setInputValue] = useState(''); 
     const handleInputChange = (e) => {
         setInputValue(e.target.value);
     }
@@ -26,7 +26,7 @@ const AddCategory = ({ setCategories, placeholder }) => {
                 type="text"
                 value={inputValue}
                 onChange={handleInputChange}
-            />
+            /> 
         </form>
     )
 }

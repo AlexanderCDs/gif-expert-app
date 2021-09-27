@@ -9,7 +9,7 @@ import GifExpertApp from './components/GifExpertApp';
 import './assets/style/index.css';
 
 ReactDOM.render(
-  <GifExpertApp />,
+  <GifExpertApp defaultData={['Rick and morty']}/>,
   document.getElementById('root')
 );
  

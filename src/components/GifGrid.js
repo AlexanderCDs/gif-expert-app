@@ -10,7 +10,7 @@ import PropTypes from 'prop-types';
 
 const GifGrid = ({ category, limit = 15}) => {
 
-    const {data: images, loading} = useFetchGifs(category); 
+    const {data: images, loading} = useFetchGifs(category, limit); 
  
     return (
         <>

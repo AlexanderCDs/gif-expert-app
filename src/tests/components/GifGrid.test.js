@@ -24,16 +24,22 @@ describe('Test <GifGrid />', () => {
     }); 
 
     test('should show items when load images useFetchGif', () => {
-        useFetchGifs.mockReturnValue({
-            data: [{
+        const data = [
+            {
                 id: '12324',
                 title: category,
                 url: 'https://localhost/image.jpg'
-            }],
+            }
+        ];
+        useFetchGifs.mockReturnValue({
+            data,
             loading: false
         }); 
         const wrapper = shallow( <GifGrid category={category} />);
-        expect( wrapper ).toMatchSnapshot();
+        //expect( wrapper ).toMatchSnapshot();
+        
+        expect( wrapper.find('span').exists() ).toBe(false);
+        expect( wrapper.find('GifGridItem').length ).toBe( data.length );
     });
     
     

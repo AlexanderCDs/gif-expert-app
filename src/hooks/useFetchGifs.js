@@ -6,21 +6,21 @@
 import { useState, useEffect } from 'react';
 import{getGifs} from '../helpers/getGifs'; 
 
-export const useFetchGifs = (category) => {
+export const useFetchGifs = (category, limit) => {
     const [state, setstate] = useState({
         data: [],
         loading: true
     });
 
     useEffect(() => {
-        getGifs(category, 10)
+        getGifs(category, limit)
             .then( data => {
                 setstate({
                     data,
                     loading: false
                 })
             });
-    }, [category])
+    }, [category, limit])
 
     return state;
 }
