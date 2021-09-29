@@ -1,12 +1,3 @@
-# 
-## Description
-Aplicación de consumo de API de GifPhy
-** Hooks
-** Helpers
-** Test con JEST
-** Custom Hooks
-
-
 # ![Gif Expert App](https://raw.githubusercontent.com/alexandercds/gif-expert-app/master/src/assets/images/preview.jpg)
 # Gif Expert App
 <table>
